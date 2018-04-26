@@ -2,7 +2,7 @@
     <string name="app_name">Keep Score</string>
     <string name="team_a">Volcanos</string>
     <string name="team_b">Destroyers</string>
-    <string name="runs_text">Runs:</string>
+    <string name="runs_text">Runs</string>
     <string name="run_button"> RUN</string>
     <string name="initial_score">0</string>
     <string name="outs_text">Outs:</string>

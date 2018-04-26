@@ -6,10 +6,9 @@
     android:fillViewport="true"
     tools:context="com.example.android.keepscore.MainActivity">
 
-    <!-- TODO fix scrollview issues-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="match_parent"
@@ -20,10 +19,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:orientation="horizontal">
-
+            android:layout_height="wrap_content"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -34,84 +31,85 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="12dp"
                     android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/team_a"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="@string/team_a" />
+                    android:textStyle="bold" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="30sp"
-                        android:fontFamily="serif-monospace"
-                        android:text="@string/runs_text" />
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/team_a_run"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
                         android:fontFamily="serif-monospace"
+                        android:text="@string/initial_score"
                         android:textColor="@android:color/holo_blue_dark"
-                        android:text="@string/initial_score" />
+                        android:textSize="80sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="@string/runs_text"
+                        android:textSize="30sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginBottom="20dp"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
                         android:fontFamily="serif-monospace"
-                        android:text="@string/outs_text" />
+                        android:text="@string/outs_text"
+                        android:textSize="30sp" />
 
                     <TextView
                         android:id="@+id/team_a_outs"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
                         android:fontFamily="serif-monospace"
+                        android:text="@string/initial_score"
                         android:textColor="@android:color/holo_blue_dark"
-                        android:text="@string/initial_score" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="addOneRunTeamA"
                     android:layout_margin="10dp"
                     android:background="@drawable/rounded_corner"
-                    android:textSize="20sp"
-                    android:text="@string/run_button" />
+                    android:onClick="addOneRunTeamA"
+                    android:text="@string/run_button"
+                    android:textSize="20sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="addOutTeamA"
                     android:layout_margin="10dp"
                     android:background="@drawable/rounded_corner"
-                    android:textSize="20sp"
-                    android:text="@string/outs_button" />
+                    android:onClick="addOutTeamA"
+                    android:text="@string/outs_button"
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="100dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="80dp"
                 android:background="@android:color/black">
 
             </View>
@@ -125,94 +123,93 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="12dp"
                     android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/team_b"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="@string/team_b" />
+                    android:textStyle="bold" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="30sp"
-                        android:fontFamily="serif-monospace"
-                        android:text="@string/runs_text" />
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/team_b_run"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
                         android:fontFamily="serif-monospace"
+                        android:text="@string/initial_score"
                         android:textColor="@android:color/holo_blue_dark"
-                        android:text="@string/initial_score" />
+                        android:textSize="80sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:text="@string/runs_text"
+                        android:textSize="30sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_marginBottom="20dp"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
                         android:fontFamily="serif-monospace"
-                        android:text="@string/outs_text" />
+                        android:text="@string/outs_text"
+                        android:textSize="30sp" />
 
                     <TextView
                         android:id="@+id/team_b_outs"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="30sp"
                         android:fontFamily="serif-monospace"
+                        android:text="@string/initial_score"
                         android:textColor="@android:color/holo_blue_dark"
-                        android:text="@string/initial_score" />
+                        android:textSize="30sp" />
                 </LinearLayout>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="addOneRunTeamB"
                     android:layout_margin="10dp"
                     android:background="@drawable/rounded_corner"
-                    android:textSize="20sp"
-                    android:text="@string/run_button" />
+                    android:onClick="addOneRunTeamB"
+                    android:text="@string/run_button"
+                    android:textSize="20sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="addOutTeamB"
                     android:layout_margin="10dp"
                     android:background="@drawable/rounded_corner"
-                    android:textSize="20sp"
-                    android:text="@string/outs_button" />
+                    android:onClick="addOutTeamB"
+                    android:text="@string/outs_button"
+                    android:textSize="20sp" />
             </LinearLayout>
 
         </LinearLayout>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="20dp"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
-                android:background="@drawable/rounded_corner"
-                android:textSize="20sp"
-                android:text="@string/reset"
-                android:onClick="reset"/>
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="124dp"
+            android:background="@drawable/rounded_corner"
+            android:onClick="reset"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/reset"
+            android:textSize="20sp" />
     </RelativeLayout>
 
 </ScrollView>
