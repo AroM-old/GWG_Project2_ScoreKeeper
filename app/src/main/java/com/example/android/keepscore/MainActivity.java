@@ -92,11 +92,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    * Set all scores to zero and reset game to start again*/
+    * Set all variables to zero and reset game to start again*/
     public void reset(View view) {
         runTeamA = 0;
         runTeamB = 0;
+        outsTeamA = 0;
+        outsTeamB = 0;
         displayRunTeamA(runTeamA);
         displayRunTeamB(runTeamB);
+        addOutTeamA(outsTeamA);
+        addOutTeamB(outsTeamB);
     }
 }
